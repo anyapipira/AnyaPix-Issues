@@ -7,7 +7,7 @@ It contains no source code, and pull requests are not accepted.
 - BOOTH shop: https://anyapipira.booth.pm/
 - [Open an issue](../../issues/new/choose)
 
-日本語 / English / 한국어 / 简体中文 / 繁體中文
+[日本語](#日本語) / [English](#english) / [한국어](#한국어) / [简体中文](#简体中文) / [繁體中文](#繁體中文)
 
 ## 日本語
 
