@@ -1,0 +1,57 @@
+name: Bug report / 不具合報告
+description: Something does not work as described. / 説明どおりに動かない
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not attach purchased unitypackages, zips or world projects. Screenshots and short videos are welcome. Issues are public.
+        購入した unitypackage・zip・ワールドのプロジェクトは添付しないでください。スクリーンショットや短い動画は歓迎です。この場は公開されています。
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product / 製品
+      options:
+        - Web editor (pix.anya.party) / Web 版エディタ
+        - Drawing Tablet / ドット絵タブレット
+        - Import Egg Frame / 入力フレーム
+        - Preset Egg Frame / プリセットフレーム
+        - Pets / ペット
+        - Other / その他
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Product version / 製品バージョン
+      description: "Web editor: shown at the top left. Unity products: e.g. 1.0.0. / Web 版は画面左上、Unity 製品は 1.0.0 など"
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 環境
+      description: Unity and VRChat SDK versions, PC/VR/Quest, or browser and OS for the web editor. / Unity・VRChat SDK のバージョン、PC/VR/Quest、Web 版ならブラウザと OS
+      placeholder: "Unity 2022.3.22f1, Worlds SDK 3.10.5, PC desktop"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 再現手順
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What happened, and what you expected / 起きたことと期待した動作
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, video or logs / スクリーンショット・動画・ログ
+      description: Unity Console errors or VRChat output_log lines help. Remove personal information first. / Unity のコンソールや VRChat のログがあると助かります。個人情報は消してください
